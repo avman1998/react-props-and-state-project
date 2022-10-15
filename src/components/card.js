@@ -1,12 +1,12 @@
 import React from "react";
 import { useState } from "react";
-import ReactDOM from "react-dom";
+
 import "../cssFiles/card.css";
 function Card(props) {
   const [status, setStatus] = useState(false);
   return (
     <div className="card-desgin m-[5px] cursor-pointer flex flex-col justify-center items-center">
-      <img src={props.img} alt="system-Image" width="400px" height="400px" />
+      <img src={props.img} alt="img" width="400px" height="400px" />
       <h1 class="text-center">{props.name}</h1>
       <p class="text-center">{props.price}</p>
       {status ? (
